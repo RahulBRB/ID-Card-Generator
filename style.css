@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.id-card {
+    border: 2px solid #333;
+    width: 350px; /* Increased the card width */
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.preview {
+    background-color: #fff;
+    padding: 10px;
+}
+
+#user-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#id-card-form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
