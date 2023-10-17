@@ -6,8 +6,7 @@ document.getElementById("generate-button").addEventListener("click", function (e
     const userLocation = document.getElementById("location").value;
     const userInfo = document.getElementById("info").value;
     const userImageUrl = document.getElementById("image-url").value;
-    const userAbout = document.getElementById("about").value;
-    const userImage = document.getElementById("image").files[0];
+    let userAbout = document.getElementById("about").value;
 
     if (userName !== "") {
         document.getElementById("user-name").textContent = userName;
@@ -25,13 +24,7 @@ document.getElementById("generate-button").addEventListener("click", function (e
         document.getElementById("user-info").textContent = userInfo;
     }
 
-    if (userImage) {
-        const reader = new FileReader();
-        reader.onload = function () {
-            document.getElementById("user-image").src = reader.result;
-        };
-        reader.readAsDataURL(userImage);
-    } else if (userImageUrl) {
+    if (userImageUrl) {
         document.getElementById("user-image").src = userImageUrl;
     }
 
