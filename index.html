@@ -4,26 +4,29 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="id-card">
-            <div class="preview">
-                <h2>Sample ID Card</h2>
-                <img id="user-image" src="default-image.png" alt="User Image">
-                <p id="user-name">John Doe</p>
-                <p id="user-title">Employee</p>
-                <p id="user-location">City, Country</p>
-                <p id="user-info">Additional Info</p>
-            </div>
-            <form id="id-card-form">
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="text" id="title" placeholder="Job Title">
-                <input type="text" id="location" placeholder="City, Country">
-                <textarea id="info" placeholder="Additional Info"></textarea>
-                <input type="file" id="image" accept="image/*">
-                <button id="generate-button">Generate ID Card</button>
-            </form>
-        </div>
-    </div>
+  <div class="container">
+      <div class="id-card">
+          <div class="preview">
+              <h2>Sample ID Card</h2>
+              <img id="user-image" src="default-image.png" alt="User Image">
+              <p id="user-name">John Doe</p>
+              <p id="user-title">Employee</p>
+              <p id="user-location">City, Country</p>
+              <p id="user-info">Additional Info</p>
+              <p id="user-about">About Me</p>
+          </div>
+          <form id="id-card-form">
+              <input type="text" id="name" placeholder="Full Name">
+              <input type="text" id="title" placeholder="Job Title">
+              <input type="text" id="location" placeholder="City, Country">
+              <textarea id="info" placeholder="Additional Info"></textarea>
+              <input type="url" id="image-url" placeholder="Profile Image URL">
+              <textarea id="about" placeholder="About Me (Max 200 characters)"></textarea>
+              <button id="generate-button">Generate ID Card</button>
+          </form>
+      </div>
+  </div>
+
 
     <script src="script.js"></script>
 </body>
