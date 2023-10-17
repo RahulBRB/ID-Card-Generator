@@ -4,7 +4,6 @@ document.getElementById("generate-button").addEventListener("click", function (e
     const userName = document.getElementById("name").value;
     const userTitle = document.getElementById("title").value;
     const userLocation = document.getElementById("location").value;
-    const userInfo = document.getElementById("info").value;
     const userImageUrl = document.getElementById("image-url").value;
     let userAbout = document.getElementById("about").value;
 
@@ -18,10 +17,6 @@ document.getElementById("generate-button").addEventListener("click", function (e
 
     if (userLocation !== "") {
         document.getElementById("user-location").textContent = userLocation;
-    }
-
-    if (userInfo !== "") {
-        document.getElementById("user-info").textContent = userInfo;
     }
 
     if (userImageUrl) {
