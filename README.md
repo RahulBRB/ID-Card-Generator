@@ -10,7 +10,7 @@ This repository contains a simple and elegant web-based ID card maker. Users can
 
 
 
-## How to Contribute
+## ❓How to Contribute
 
 We welcome contributions from everyone. To get started, follow these steps:
 
@@ -34,5 +34,7 @@ We welcome contributions from everyone. To get started, follow these steps:
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Submit a pull request.
 
-**License:**
-This project is open-source and available under the MIT License.
+## Our Contributors
+<a href="https://github.com/RahulBRB/ID-Card-Generator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=RahulBRB/ID-Card-Generator" />
+</a>
