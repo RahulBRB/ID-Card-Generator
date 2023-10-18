@@ -34,7 +34,7 @@ We welcome contributions from everyone. To get started, follow these steps:
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Submit a pull request.
 
-## Our Contributors
+## 🤝 Our Contributors ❤️
 <a href="https://github.com/RahulBRB/ID-Card-Generator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=RahulBRB/ID-Card-Generator" />
 </a>
