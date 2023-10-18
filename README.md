@@ -7,15 +7,32 @@ This repository contains a simple and elegant web-based ID card maker. Users can
 <p align="center">
     <img width="1000" src="./assets/1.png" alt="banner">
 </p>
-**Key Features:**
-- Name, job title, location, and "About Me" input fields.
-- Profile image URL support.
-- JavaScript functionality for generating the ID card.
-- Character limit for the "About Me" section.
 
-**Contributions:**
-Contributions and improvements to the project are welcome. Please follow the standard GitHub Fork and Pull Request workflow for making contributions.
-Every merge in this small project will count towards Hacktoberfest progress 👍
+
+
+## How to Contribute
+
+We welcome contributions from everyone. To get started, follow these steps:
+
+### Getting Started
+
+1. Fork the repository and clone it locally.
+2. Install [dependency/tool] by running `command`.
+3. ...
+
+### Making Changes
+
+- Explain the structure of your project.
+- Provide guidance on coding standards.
+- ...
+
+### Creating a Pull Request
+
+1. Make sure your changes are tested and linted.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
 
 **License:**
 This project is open-source and available under the MIT License.
