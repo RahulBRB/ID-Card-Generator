@@ -1,7 +1,7 @@
 # 🪪 ID-Card-Generator 🪪
 Welcome to This Repository which is contributing to Hacktoberfest2023!
 
-## Introduction :
+## 📌 Introduction :
 This repository contains a simple and elegant web-based ID card maker. Users can input their information, including name, job title, location, and a brief "About Me" section (limited to 200 characters). They can also provide a URL for their profile image. The application generates an ID card with a realistic design, featuring rounded corners, shadows, and customizable user details. 
 
 <p align="center">
