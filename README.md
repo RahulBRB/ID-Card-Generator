@@ -14,19 +14,19 @@ This repository contains a simple and elegant web-based ID card maker. Users can
 
 We welcome contributions from everyone. To get started, follow these steps:
 
-### Getting Started
+### 👉 Getting Started
 
 1. Fork the repository and clone it locally.
 2. Install [dependency/tool] by running `command`.
 3. ...
 
-### Making Changes
+### 👉 Making Changes
 
 - Explain the structure of your project.
 - Provide guidance on coding standards.
 - ...
 
-### Creating a Pull Request
+### 👉 Creating a Pull Request
 
 1. Make sure your changes are tested and linted.
 2. Create a new branch: `git checkout -b feature/your-feature-name`.
