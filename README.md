@@ -10,6 +10,7 @@ This repository contains a simple and elegant web-based ID card maker. Users can
 
 **Contributions:**
 Contributions and improvements to the project are welcome. Please follow the standard GitHub Fork and Pull Request workflow for making contributions.
+Every merge in this small project will count towards Hacktoberfest progress 👍
 
 **License:**
 This project is open-source and available under the MIT License.
