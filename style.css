@@ -36,6 +36,7 @@ body {
 
 #id-card-form {
     margin-top: 20px;
+    padding-right: 20px; /* Added padding-right */
 }
 
 input, textarea {
