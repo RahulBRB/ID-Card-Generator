@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('assets/bg.gif');
+    background-color: rgba(0, 0, 0, 0.299);
+    background-repeat: none;
+    background-size: cover;
 }
 
 .container {
@@ -9,29 +12,73 @@ body {
     align-items: center;
     height: 100vh;
 }
+h2{
+    color: rgb(7, 7, 173);
+    font-weight: 1000;
+    font-size: 2rem;
+}
+h4{
+    color: rgb(7, 7, 173);
+    font-weight: 700;
 
+}
+svg{
+    position: relative;
+    top: 8px;
+}
 .id-card {
-    border: 1px solid #555;
-    background-color: #fff;
-    box-shadow: 0px 0px 15px 2px #888888;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
     border-radius: 10px;
-    width: 350px;
+    width: 450px;
     padding: 20px;
     text-align: center;
+
 }
 
 .preview {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 2rem;
+    border-radius: 25px 25px 0px 0px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 170px;
+    line-height: 0.2rem;
+    text-align: left;
+    background-color: rgba(64, 64, 165, 0.105);
 }
 
+.inner{
+    width: 50%;
+    padding-left: 60px;
+}
+.image{
+    width: 20%;
+    
+}
+.About{
+    background-color: rgba(64, 64, 165, 0.171);
+    padding-left: 2rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0rem;
+    text-align: left;
+    line-height: 0.1rem;
+    border-radius: 0px 0px 25px 25px ;
+
+}
+
+p{
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
 #user-image {
-    max-width: 100px;
-    max-height: 100px;
+    width: 7rem;
+    height: 9rem;
     border: 2px solid #888;
-    border-radius: 50%;
 }
 
 #id-card-form {
@@ -50,14 +97,17 @@ input, textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: rgb(7, 7, 173);
+    color: white;
+    font-weight: 1000;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px 1px #0056b3;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: grey;
+    color: black;
+    transition: 0.2s;
 }
