@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://raw.githubusercontent.com/RahulBRB/ID-Card-Generator/main/assets/bg.gif');
-    background-color: rgba(0, 0, 0, 0.299);
-    background-repeat: none;
-    background-size: cover;
+  background-image: url('https://raw.githubusercontent.com/RahulBRB/ID-Card-Generator/main/assets/bg.gif') !important;
+  background-color: rgba(0, 0, 0, 0.299);
+  background-repeat: none;
+  background-size: cover;
 }
 
 .container {
@@ -82,12 +82,15 @@ svg{
     padding-left: 2rem;
     border: 1px solid #ccc;
     margin-bottom: 0rem;
+  height: auto !important;
     text-align: left;
-    line-height: 0.1rem;
+    line-height: 1.2rem;
     border-radius: 0px 0px 25px 25px ;
 
 }
-
+#user-about{
+  height:auto !important;
+}
 p{
     padding-bottom: 0.5rem;
     font-weight: 600;
