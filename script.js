@@ -1,3 +1,5 @@
+const showImg = document.getElementById("user-image");
+const hidePara = document.getElementById("droptext");
 document.getElementById("generate-button").addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -20,7 +22,9 @@ document.getElementById("generate-button").addEventListener("click", function (e
     }
 
     if (userImageUrl) {
-        document.getElementById("user-image").src = userImageUrl;
+        showImg.style.display = 'inline';
+        hidePara.style.display = 'none';
+        document.getElementById("user-image").src = userImageUrl.replace(/["']/g, '');
     }
 
     if (userAbout !== "") {
@@ -29,4 +33,27 @@ document.getElementById("generate-button").addEventListener("click", function (e
         }
         document.getElementById("user-about").textContent = userAbout;
     }
+});
+
+
+const dropArea = document.getElementById("Profile");
+
+dropArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropArea.classList.add("change");
+});
+dropArea.addEventListener("dragleave", () => {
+    dropArea.classList.remove("change");
+});
+var imageUrl;
+dropArea.addEventListener("drop", (e) => {
+    dropArea.classList.remove("change");
+    e.preventDefault();
+    const image = e.dataTransfer.files[0];
+    var imageUrl = URL.createObjectURL(image);
+    console.log(imageUrl);
+    showImg.style.display = 'inline';
+    hidePara.style.display = 'none';
+    const imageElement = document.getElementById("user-image");
+    imageElement.src = imageUrl;
 });
