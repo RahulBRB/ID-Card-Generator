@@ -71,7 +71,8 @@ svg{
 #user-image{
     width: 100%;
     height: 100%;
-    background-size: cover;
+    object-fit: cover;
+    transform-origin: center center;
 }
 .change{
     border: 2px dashed crimson;
@@ -125,4 +126,17 @@ button:hover {
     background-color: grey;
     color: black;
     transition: 0.2s;
+}
+
+.sliders {
+    box-sizing: border-box;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.sliders input[type="range"] {
+    width: 100%; /* Ocupa todo el ancho de su contenedor */
+    margin: 0;  /* Restablece cualquier margen predeterminado */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho total */
 }
