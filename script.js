@@ -57,3 +57,23 @@ dropArea.addEventListener("drop", (e) => {
     const imageElement = document.getElementById("user-image");
     imageElement.src = imageUrl;
 });
+
+
+const userImage = document.getElementById("user-image");
+const zoomSlider = document.getElementById("zoom-slider");
+const rotateSlider = document.getElementById("rotate-slider");
+
+zoomSlider.addEventListener("input", function() {
+    applyTransformations();
+});
+
+rotateSlider.addEventListener("input", function() {
+    applyTransformations();
+});
+
+function applyTransformations() {
+    const scaleValue = zoomSlider.value;
+    const rotateValue = rotateSlider.value;
+    userImage.style.transform = `scale(${scaleValue}) rotate(${rotateValue}deg)`;
+}
+
