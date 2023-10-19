@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('assets/bg.gif');
+    background-image: url('https://raw.githubusercontent.com/RahulBRB/ID-Card-Generator/main/assets/bg.gif');
     background-color: rgba(0, 0, 0, 0.299);
     background-repeat: none;
     background-size: cover;
