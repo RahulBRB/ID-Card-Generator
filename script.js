@@ -33,6 +33,29 @@ document.getElementById("generate-button").addEventListener("click", function (e
         }
         document.getElementById("user-about").textContent = userAbout;
     }
+
+    function color() {
+        const collt=document.getElementById("coll-text").value;
+        const collh=document.getElementById("coll-head").value;
+        const collb=document.getElementById("coll-back").value;
+        const prev=document.getElementsByClassName("preview")[0];
+        const abou=document.getElementsByClassName("About")[0];
+        var paragraphs = document.getElementsByClassName("pp");
+        var heading = document.getElementsByClassName("hh");
+
+        prev.style.backgroundColor=collb;
+        abou.style.backgroundColor=collb;
+
+        for (i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.color =collt;
+        }
+        
+        for (i = 0; i < heading.length; i++) {
+            heading[i].style.color =collh;
+        }
+    }
+    color();
+    
 });
 
 

@@ -27,6 +27,7 @@ svg{
     top: 8px;
 }
 .id-card {
+    margin-top: 5%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
     border-radius: 10px;
@@ -50,6 +51,7 @@ svg{
     line-height: 0.2rem;
     text-align: left;
     background-color: rgba(64, 64, 165, 0.105);
+    opacity: 0.8;
 }
 
 .inner{
@@ -83,10 +85,11 @@ svg{
     padding-left: 2rem;
     border: 1px solid #ccc;
     margin-bottom: 0rem;
-  height: auto !important;
+    height: auto !important;
     text-align: left;
     line-height: 1.2rem !important;
     border-radius: 0px 0px 25px 25px ;
+    opacity: 0.6;
 
 }
 #user-about{
@@ -139,4 +142,21 @@ button:hover {
     width: 100%; /* Ocupa todo el ancho de su contenedor */
     margin: 0;  /* Restablece cualquier margen predeterminado */
     box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho total */
+}
+
+.color-pal{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    background-color: #bf6d02;
+    border:2px solid white;
+    border-radius: 50%;
+    padding: 4.2%;
+}
+
+#coll-head ,#coll-back , #coll-text{
+    padding:1%;
+    width:8%;
 }
