@@ -7,6 +7,8 @@ document.getElementById("generate-button").addEventListener("click", function (e
     const userTitle = document.getElementById("title").value;
     const userLocation = document.getElementById("location").value;
     const userImageUrl = document.getElementById("image-url").value;
+    const userPhone = document.getElementById("phone").value;
+    const userEmail = document.getElementById("email").value;
     let userAbout = document.getElementById("about").value;
 
     if (userName !== "") {
@@ -25,6 +27,14 @@ document.getElementById("generate-button").addEventListener("click", function (e
         showImg.style.display = 'inline';
         hidePara.style.display = 'none';
         document.getElementById("user-image").src = userImageUrl.replace(/["']/g, '');
+    }
+    
+    if (userPhone !== "") {
+        document.getElementById("user-phone").textContent = userPhone; // Update phone element
+    }
+
+    if (userEmail !== "") {
+        document.getElementById("user-email").textContent = userEmail; // Update email element
     }
 
     if (userAbout !== "") {
