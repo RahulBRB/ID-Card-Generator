@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-  background-image: url('https://raw.githubusercontent.com/RahulBRB/ID-Card-Generator/main/assets/bg.gif') !important;
-  background-color: rgba(0, 0, 0, 0.299);
-  background-repeat: none;
-  background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/RahulBRB/ID-Card-Generator/main/assets/bg.gif') !important;
+    background-color: rgba(0, 0, 0, 0.299);
+    background-repeat: none;
+    background-size: cover;
 }
 
 .container {
@@ -12,20 +12,23 @@ body {
     align-items: center;
     height: 100vh;
 }
-h2{
+
+h2 {
     color: rgb(7, 7, 173);
     font-weight: 1000;
     font-size: 2rem;
 }
-h4{
+
+h4 {
     color: rgb(7, 7, 173);
     font-weight: 700;
-
 }
-svg{
+
+svg {
     position: relative;
     top: 8px;
 }
+
 .id-card {
     margin-top: 5%;
     background-color: rgb(255, 255, 255);
@@ -34,7 +37,6 @@ svg{
     width: 450px;
     padding: 20px;
     text-align: center;
-
 }
 
 .preview {
@@ -54,13 +56,12 @@ svg{
     opacity: 0.8;
 }
 
-.inner{
+.inner {
     width: 50%;
     padding-left: 60px;
 }
 
-
-.image{
+.image {
     width: 150px;
     height: 200px;
     background-color: rgba(171, 157, 248, 0.836);
@@ -70,17 +71,20 @@ svg{
     justify-content: center;
     align-items: center;
 }
-#user-image{
+
+#user-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transform-origin: center center;
 }
-.change{
+
+.change {
     border: 2px dashed crimson;
     background-color: #bf6d02;
 }
-.About{
+
+.About {
     background-color: rgba(64, 64, 165, 0.171);
     padding-left: 2rem;
     border: 1px solid #ccc;
@@ -88,75 +92,14 @@ svg{
     height: auto !important;
     text-align: left;
     line-height: 1.2rem !important;
-    border-radius: 0px 0px 25px 25px ;
+    border-radius: 0px 0px 25px 25px;
     opacity: 0.6;
+}
 
+#user-about {
+    height: auto !important;
 }
-#user-about{
-  height:auto !important;
-}
-p{
+
+p {
     padding-bottom: 0.5rem;
     font-weight: 600;
-}
-
-#id-card-form {
-    margin-top: 20px;
-    padding-right: 20px; /* Added padding-right */
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(7, 7, 173);
-    color: white;
-    font-weight: 1000;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.2s;
-}
-
-button:hover {
-    background-color: grey;
-    color: black;
-    transition: 0.2s;
-}
-
-.sliders {
-    box-sizing: border-box;
-    display: flex;
-    gap: 1em;
-    margin-top: 1em;
-}
-
-.sliders input[type="range"] {
-    width: 100%; /* Ocupa todo el ancho de su contenedor */
-    margin: 0;  /* Restablece cualquier margen predeterminado */
-    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho total */
-}
-
-.color-pal{
-    display: flex;
-    flex-direction: row;
-}
-
-.col{
-    background-color: #bf6d02;
-    border:2px solid white;
-    border-radius: 50%;
-    padding: 4.2%;
-}
-
-#coll-head ,#coll-back , #coll-text{
-    padding:1%;
-    width:8%;
-}
