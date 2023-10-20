@@ -1,6 +1,5 @@
 const showImg = document.getElementById("user-image");
 const hidePara = document.getElementById("droptext");
-
 document.getElementById("generate-button").addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -8,8 +7,6 @@ document.getElementById("generate-button").addEventListener("click", function (e
     const userTitle = document.getElementById("title").value;
     const userLocation = document.getElementById("location").value;
     const userImageUrl = document.getElementById("image-url").value;
-    const userPhone = document.getElementById("phone").value;
-    const userEmail = document.getElementById("email").value;
     let userAbout = document.getElementById("about").value;
 
     if (userName !== "") {
@@ -30,14 +27,6 @@ document.getElementById("generate-button").addEventListener("click", function (e
         document.getElementById("user-image").src = userImageUrl.replace(/["']/g, '');
     }
 
-    if (userPhone !== "") {
-        document.getElementById("user-phone").textContent = userPhone;
-    }
-
-    if (userEmail !== "") {
-        document.getElementById("user-email").textContent = userEmail;
-    }
-
     if (userAbout !== "") {
         if (userAbout.length > 200) {
             userAbout = userAbout.substring(0, 200); // Truncate if longer than 200 characters
@@ -46,29 +35,29 @@ document.getElementById("generate-button").addEventListener("click", function (e
     }
 
     function color() {
-        const collt = document.getElementById("coll-text").value;
-        const collh = document.getElementById("coll-head").value;
-        const collb = document.getElementById("coll-back").value;
-        const prev = document.getElementsByClassName("preview")[0];
-        const abou = document.getElementsByClassName("About")[0];
+        const collt=document.getElementById("coll-text").value;
+        const collh=document.getElementById("coll-head").value;
+        const collb=document.getElementById("coll-back").value;
+        const prev=document.getElementsByClassName("preview")[0];
+        const abou=document.getElementsByClassName("About")[0];
         var paragraphs = document.getElementsByClassName("pp");
         var heading = document.getElementsByClassName("hh");
 
-        prev.style.backgroundColor = collb;
-        abou.style.backgroundColor = collb;
+        prev.style.backgroundColor=collb;
+        abou.style.backgroundColor=collb;
 
         for (i = 0; i < paragraphs.length; i++) {
-            paragraphs[i].style.color = collt;
+            paragraphs[i].style.color =collt;
         }
 
         for (i = 0; i < heading.length; i++) {
-            heading[i].style.color = collh;
+            heading[i].style.color =collh;
         }
     }
-
     color();
 
 });
+
 
 const dropArea = document.getElementById("Profile");
 
@@ -76,13 +65,10 @@ dropArea.addEventListener("dragover", (e) => {
     e.preventDefault();
     dropArea.classList.add("change");
 });
-
 dropArea.addEventListener("dragleave", () => {
     dropArea.classList.remove("change");
 });
-
 var imageUrl;
-
 dropArea.addEventListener("drop", (e) => {
     dropArea.classList.remove("change");
     e.preventDefault();
@@ -90,20 +76,21 @@ dropArea.addEventListener("drop", (e) => {
     var imageUrl = URL.createObjectURL(image);
     console.log(imageUrl);
     showImg.style.display = 'inline';
-    hidePara.style display = 'none';
+    hidePara.style.display = 'none';
     const imageElement = document.getElementById("user-image");
     imageElement.src = imageUrl;
 });
+
 
 const userImage = document.getElementById("user-image");
 const zoomSlider = document.getElementById("zoom-slider");
 const rotateSlider = document.getElementById("rotate-slider");
 
-zoomSlider.addEventListener("input", function () {
+zoomSlider.addEventListener("input", function() {
     applyTransformations();
 });
 
-rotateSlider.addEventListener("input", function () {
+rotateSlider.addEventListener("input", function() {
     applyTransformations();
 });
 
