@@ -2,33 +2,37 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script> 
 </head>
 <body>
     <div class="container">
         <div class="id-card">
             <h2>Sample ID Card Maker <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="40" height="40"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z" fill="rgba(7,7,173,1)"></path></svg></h2>
+            <div id="photo">     
             <div class="preview">
                 <div class="image" id="Profile">
                     <p id="droptext">Drag And Drop</p>
                     <img id="user-image" style="display: none;" src="">
                 </div>
                 <div class="inner">
-                    <h4>Name</h4>
-                    <p id="user-name">John Doe</p>
-                    <h4>Job Title</h4>
-                    <p id="user-title">Employee</p>
-                    <h4>Location</h4>
-                    <p id="user-location">City, Country</p>
-                    <h4>Phone</h4>
-                    <p id="user-phone">123-456-7890</p>
-                    <h4>Email</h4>
-                    <p id="user-email">johndoe@example.com</p>
+                    <h4 class="hh">Name</h4>
+                    <p id="user-name" class="pp">John Doe</p>
+                    <h4 class="hh">Job Title</h4>
+                    <p class="pp" id="user-title">Employee</p>
+                    <h4 class="hh">Location</h4>
+                    <p class="pp" id="user-location">City, Country</p>
+                    <h4 class="hh">Phone</h4>
+                    <p class="pp" id="user-phone">123-456-7890</p>
+                    <h4 class="hh">Email</h4>
+                    <p class="pp" id="user-email">johndoe@example.com</p>
                 </div>
             </div>
             <div class="About">
                 <h4>About</h4>
                 <p id="user-about">About Me</p>
             </div>
+        </div>
+        <button onclick="takeshot()">Download Id card</button>
             <div class="sliders">
                 <label>Zoom <input type="range" id="zoom-slider" min="0.5" max="3" step="0.01" value="1"></label>
                 <label>Rotate <input type="range" id="rotate-slider" min="-180" max="180" step="1" value="0"></label>
@@ -45,13 +49,12 @@
                 <input type="color" id="coll-back">
                 <label for="colorpicker">Header Color:</label>
                 <input type="color" id="coll-head">
-                <label for "colorpicker">text Color:</label>
+                <label for="colorpicker">text Color:</label>
                 <input type="color" id="coll-text">
-                <button id="generate-button">Generate ID Card</button>
+                <button id="generate-button">Generate ID Card</button> 
             </form>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
