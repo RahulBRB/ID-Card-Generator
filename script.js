@@ -109,3 +109,17 @@ function applyTransformations() {
     const rotateValue = rotateSlider.value;
     userImage.style.transform = `scale(${scaleValue}) rotate(${rotateValue}deg)`;
 }
+
+function takeshot() { 
+    let div = document.getElementById('photo'); 
+
+    html2canvas(div).then( 
+        function (canvas) { 
+            // document.getElementById('output').appendChild(canvas); 
+            var dataURL = canvas.toDataURL("image/png");
+            var a = document.createElement('a');
+            a.href = dataURL;
+            a.download = 'canvas-download.jpeg';
+            a.click();
+        }) 
+} 
